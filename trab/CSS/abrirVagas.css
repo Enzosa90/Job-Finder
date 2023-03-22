@@ -1,0 +1,10 @@
+body {
+    background-image: url("../img/sine-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+h1{
+    font-size: white;
+}

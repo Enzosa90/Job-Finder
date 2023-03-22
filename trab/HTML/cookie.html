@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box-cookies.hide{
+            display: none !important;
+        }
+
+        .box-cookies{
+            border: 3px solid black;
+            padding: 20px;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .btn-cookies{
+            background-color: black;
+            color: white;
+            width: 100px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .btn-cookies{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box-cookies hide">
+        <p class="msg-cookies">Este site usa Cookies para garantir que você obtenha a melhor experiência
+            <a href="#"> Politica de privacidade</a>
+        </p>
+
+        <div class="btn-cookies">
+            Aceitar!
+        </div>
+    </div>
+    
+    <script>
+        
+        if(!localStorage.nossoCook){
+            document.querySelector('.box-cookies').classList.remove('hide')
+        }
+
+        const acceptCookies = () => {
+            document.querySelector('.box-cookies').classList.add('hide')
+            localStorage.setItem("nossoCook", "accept");
+        }
+
+        const btnCookies = document.querySelector('.btn-cookies')
+        btnCookies.addEventListener('click', acceptCookies)
+
+    </script>
+</body>
+</html>

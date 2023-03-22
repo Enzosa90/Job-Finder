@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Job Finder</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="../CSS/estilo.css">
+  <link rel="stylesheet" href="../CSS/contato.css">
+  <link rel="stylesheet" href="../CSS/sobre.css">  
+</head>
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Job Finder</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="../HTML/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="../HTML/sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="../HTML/contato.html">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="../HTML/login.html">Login</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="../HTML/abrirVagas.html">Abrir Vaga</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+ 
+
+  <div class="centro">
+    <div class="area-form">
+    <main>
+      <h2 id="h2-contato">FALE CONOSCO POR EMAIL</h2>
+    </main>
+    <div class="formulario">
+      <form method="POST">
+          <input type="text" name="nome" placeholder="Assunto">
+          <input type="email" name="email" placeholder="seu email">
+          <input type="text" name="texto" class="mensagem" placeholder="mensagem...">
+          <input type="submit" value="Enviar" onclick="enviar()" id="Enviar">
+      </form>
+  </div>
+  </div>
+  </div>
+
+  <script>
+    document.getElementById("Enviar").addEventListener("click", function() {
+      alert("Enviado com sucesso para Job Finder!");
+    });
+  </script>
+</body>
+<main>
+  <h1>QUEM SOMOS?</h1>
+      <ul class="conteudo3">
+          <li>
+             <img src="../img/enzo.jpeg" alt="" class="imagem-sobre" > 
+              
+              <h2>Enzo Sá</h2>
+              <a href="https://www.instagram.com/enzoo_sa/" target="_blank">
+                  <img src="../img/logo-insta-ii.png" alt="" id="logo"> @enzoo_sa 
+              </a>
+          </li>
+
+          <li>
+          <img src="../img/bryan.jpeg" alt="" class="imagem-sobre" > 
+          
+          <h2>Bryan Victor</h2>
+            <a href="https://www.instagram.com/_bryannvictorr_/" target="_blank">
+              <img src="../img/logo-insta-ii.png" alt="" id="logo"> @_bryannvictorr_ 
+          </a>
+          </li>
+
+          <li>
+            <img src="../img/igor.jpeg" alt="" class="imagem-sobre" > 
+            
+            <h2>Igor Moreira</h2>
+            <a href="https://www.instagram.com/igor.wtfk/" target="_blank">
+                <img src="../img/logo-insta-ii.png" alt="" id="logo"> igor.wtfk
+            </a>
+          </li>
+
+          <li>
+            <img src="../img/welison.jpeg" alt="" class="imagem-sobre" > 
+            <h2>Welison Andrade</h2>
+            <a href="https://www.instagram.com/welison_andrade_/" target="_blank">
+              <img src="../img/logo-insta-ii.png" alt="" id="logo"> @welison_andrade_ 
+            </a>
+          </li>
+      </ul>
+</main>
